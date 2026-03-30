@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{nome da empresa} — Soluções em Comunicação Empresarial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-chip">{nome da empresa}</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#marcas">Marcas</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <a href="https://wa.me/5511999999999" target="_blank" class="btn-whatsapp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Fale conosco
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#sobre">Sobre</a>
+      <a href="#marcas">Marcas</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#contato">Contato</a>
+      <a href="https://wa.me/5511999999999" target="_blank" class="btn-whatsapp-mobile">WhatsApp</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-blob blob1"></div>
+      <div class="hero-blob blob2"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-tag">
+        <span class="tag-dot"></span>
+        Soluções em Comunicação Empresarial
+      </div>
+      <h1 class="hero-title">
+        Tecnologia que<br>
+        <em>conecta</em> sua<br>
+        empresa ao futuro
+      </h1>
+      <p class="hero-sub">
+        Distribuidor autorizado das maiores marcas em áudio, vídeo e comunicação. HP Poly, Jabra, Logitech e Yealink — equipamentos profissionais para o seu negócio.
+      </p>
+      <div class="hero-actions">
+        <a href="https://wa.me/5511999999999" target="_blank" class="btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Solicitar orçamento
+        </a>
+        <a href="#produtos" class="btn-outline">Ver produtos</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <strong>4</strong>
+          <span>Marcas líderes</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <strong>+500</strong>
+          <span>Produtos disponíveis</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <strong>B2B</strong>
+          <span>Especialista empresarial</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="visual-ring ring1"></div>
+      <div class="visual-ring ring2"></div>
+      <div class="visual-ring ring3"></div>
+      <div class="visual-center">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="40" r="38" stroke="url(#g1)" stroke-width="2"/>
+          <path d="M25 40c0-8.284 6.716-15 15-15s15 6.716 15 15-6.716 15-15 15-15-6.716-15-15z" fill="url(#g2)"/>
+          <path d="M34 35h12M34 40h8M34 45h10" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#00D4FF"/>
+              <stop offset="1" stop-color="#0066FF"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="25" y1="25" x2="55" y2="55" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#00D4FF"/>
+              <stop offset="1" stop-color="#0066FF"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="float-card fc1">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Atendimento via WhatsApp
+      </div>
+      <div class="float-card fc2">
+        <span class="fc2-dot"></span>
+        Distribuidor autorizado
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="sobre-inner">
+        <div class="sobre-text">
+          <div class="section-tag">Quem somos</div>
+          <h2 class="section-title">Especialistas em comunicação e colaboração corporativa</h2>
+          <p>A <strong>{nome da empresa}</strong> é uma empresa focada em soluções de comunicação para o mercado corporativo. Atuamos como distribuidores das principais marcas do setor, oferecendo produtos de alta qualidade para videoconferência, telefonia IP, headsets profissionais e muito mais.</p>
+          <p>Nosso compromisso é conectar empresas com as melhores tecnologias disponíveis, com suporte especializado e atendimento personalizado via WhatsApp.</p>
+          <div class="sobre-features">
+            <div class="feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <strong>Produtos originais</strong>
+                <span>Garantia de fábrica em todos os equipamentos</span>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              </div>
+              <div>
+                <strong>Entrega rápida</strong>
+                <span>Logística eficiente para todo o Brasil</span>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+              </div>
+              <div>
+                <strong>Suporte especializado</strong>
+                <span>Time técnico disponível para auxiliar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-visual">
+          <div class="sobre-card">
+            <div class="sobre-number">10<span>+</span></div>
+            <p>anos de experiência no mercado</p>
+          </div>
+          <div class="sobre-card">
+            <div class="sobre-number">500<span>+</span></div>
+            <p>clientes corporativos atendidos</p>
+          </div>
+          <div class="sobre-card sobre-card--wide">
+            <div class="sobre-number">4</div>
+            <p>das maiores marcas mundiais em comunicação</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARCAS -->
+  <section class="marcas" id="marcas">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Parceiros</div>
+        <h2 class="section-title">Marcas que representamos</h2>
+        <p class="section-sub">Trabalhamos com as líderes mundiais em tecnologia de comunicação</p>
+      </div>
+      <div class="marcas-grid">
+
+        <div class="marca-card" data-brand="poly">
+          <div class="marca-logo-wrap">
+            <div class="marca-logo-text poly-logo">HP Poly</div>
+          </div>
+          <div class="marca-info">
+            <h3>HP Poly</h3>
+            <p>Anteriormente Polycom e Plantronics, a HP Poly oferece soluções completas de vídeo e áudio para salas de reunião, escritórios e trabalho remoto.</p>
+            <ul>
+              <li>Salas de videoconferência</li>
+              <li>Headsets profissionais</li>
+              <li>Telefones IP</li>
+              <li>Câmeras de reunião</li>
+            </ul>
+            <a href="https://wa.me/5511999999999?text=Olá! Tenho interesse em produtos HP Poly." target="_blank" class="marca-cta">
+              Solicitar cotação
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="marca-card" data-brand="jabra">
+          <div class="marca-logo-wrap">
+            <div class="marca-logo-text jabra-logo">Jabra</div>
+          </div>
+          <div class="marca-info">
+            <h3>Jabra</h3>
+            <p>Marca líder mundial em áudio profissional, com mais de 150 anos de experiência. Presente em mais de 80% das empresas Fortune 500.</p>
+            <ul>
+              <li>Headsets sem fio</li>
+              <li>Câmeras de videoconferência</li>
+              <li>Speakerphones</li>
+              <li>Fones intra-auriculares</li>
+            </ul>
+            <a href="https://wa.me/5511999999999?text=Olá! Tenho interesse em produtos Jabra." target="_blank" class="marca-cta">
+              Solicitar cotação
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="marca-card" data-brand="logitech">
+          <div class="marca-logo-wrap">
+            <div class="marca-logo-text logitech-logo">Logitech</div>
+          </div>
+          <div class="marca-info">
+            <h3>Logitech</h3>
+            <p>Referência global em tecnologia para videoconferência. Soluções para salas de todos os tamanhos, integradas às principais plataformas de reunião.</p>
+            <ul>
+              <li>Sistemas para salas de reunião</li>
+              <li>Webcams profissionais</li>
+              <li>Câmeras PTZ</li>
+              <li>Rally Bar e Rally Camera</li>
+            </ul>
+            <a href="https://wa.me/5511999999999?text=Olá! Tenho interesse em produtos Logitech." target="_blank" class="marca-cta">
+              Solicitar cotação
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="marca-card" data-brand="yealink">
+          <div class="marca-logo-wrap">
+            <div class="marca-logo-text yealink-logo">Yealink</div>
+          </div>
+          <div class="marca-info">
+            <h3>Yealink</h3>
+            <p>Líder global em telefonia IP e soluções de colaboração unificada. Equipamentos robustos e acessíveis para empresas de todos os tamanhos.</p>
+            <ul>
+              <li>Telefones IP</li>
+              <li>Sistemas de videoconferência</li>
+              <li>Headsets Teams e Zoom</li>
+              <li>Câmeras de sala</li>
+            </ul>
+            <a href="https://wa.me/5511999999999?text=Olá! Tenho interesse em produtos Yealink." target="_blank" class="marca-cta">
+              Solicitar cotação
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <section class="produtos" id="produtos">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Catálogo</div>
+        <h2 class="section-title">Categorias de produtos</h2>
+        <p class="section-sub">Soluções completas para sua infraestrutura de comunicação</p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="headsets">Headsets</button>
+        <button class="filter-btn" data-filter="video">Videoconferência</button>
+        <button class="filter-btn" data-filter="telefonia">Telefonia IP</button>
+        <button class="filter-btn" data-filter="cameras">Câmeras</button>
+      </div>
+
+      <div class="produtos-grid" id="produtos-grid">
+
+        <div class="produto-card" data-cat="headsets">
+          <div class="produto-badge">HP Poly</div>
+          <div class="produto-img headset-img">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="40" fill="#e8f4ff"/>
+              <path d="M30 55c0-11.046 8.954-20 20-20s20 8.954 20 20" stroke="#0066cc" stroke-width="3" stroke-linecap="round"/>
+              <rect x="23" y="53" width="10" height="16" rx="5" fill="#0066cc"/>
+              <rect x="67" y="53" width="10" height="16" rx="5" fill="#0066cc"/>
+              <line x1="50" y1="75" x2="50" y2="82" stroke="#0066cc" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="50" cy="85" r="3" fill="#0066cc"/>
+            </svg>
+          </div>
+          <div class="produto-info">
+            <span class="produto-cat">Headsets</span>
+            <h4>Poly Voyager Focus 2</h4>
+            <p>Headset sem fio com cancelamento ativo de ruído para máxima concentração e clareza de áudio nas chamadas.</p>
+            <a href="https://wa.me/5511999999999?text=Olá! Tenho interesse no Poly Voyager Focus 2." target="_blank" class="produto-cta">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Pedir cotação
+            </a>
+          </div>
+        </div>
+
+        <div class="produto-card" data-cat="headsets">
+          <div class="produto-badge jabra-badge">Jabra</div>
+          <div class="produto-img headset-img jabra-bg">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="40" fill="#fff0e8"/>
+              <path d="M30 55c0-11.046 8.954-20 20-20s20 8.954 20 20" stroke="#cc4400" stroke-width="3" stroke-linecap="round"/>
+              <rect x="23" y="53" width="10" height="16" rx="5" fill="#cc4400"/>
+              <rect x="67" y="53" width="10" height="16" rx="5" fill="#cc4400"/>
+              <line x1="50" y1="75" x2="50" y2="82" stroke="#cc4400" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="50" cy="85" r="3" fill="#cc4400"/>
+            </svg>
+          </div>
+          <div class="produto-info">
+            <span class="produto-cat">Headsets</span>
+            <h4>Jabra Evolve3 85</h4>
+            <p>O headset mais avançado da Jabra com ANC inteligente por IA, design premium e integração total com plataformas colaborativas.</p>
+            <a href="https://wa.me/5511999999999?text=Olá! Tenho interesse no Jabra Evolve3 85." target="_blank" class="produto-cta">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Pedir cotação
+            </a>
+          </div>
+        </div>
+
+        <div class="produto-card" data-cat="video">
+          <div class="produto-badge logitech-badge">Logitech</div>
+          <div class="produto-img video-img">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="40" fill="#e8ffe8"/>
+              <rect x="22" y="35" width="40" height="30" rx="4" fill="#006600" opacity="0.8"/>
+              <path d="M62 44l14-8v28l-14-8V44z" fill="#006600"/>
+              <circle cx="38" cy="50" r="7" fill="white" opacity="0.5"/>
+            </svg>
+          </div>
+          <div class="produto-info">
+            <span class="produto-cat">Videoconferência</span>
+            <h4>Logitech Rally Bar</h4>
+            <p>Barra de videoconferência tudo-em-um com câmera AI, microfones beamforming e alto-falantes integrados para salas de médio porte.</p>
+            <a href="https://wa.me/5511999999999?text=Olá! Tenho interesse no Logitech Rally Bar." target="_blank" class="produto-cta">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Pedir cotação
+            </a>
+          </div>
+        </div>
+
+        <div class="produto-card" data-cat="telefonia">
+          <div class="produto-badge yealink-badge">Yealink</div>
+          <div class="produto-img telefone-img">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="40" fill="#f0f0ff"/>
+              <rect x="28" y="25" width="44" height="50" rx="4" fill="#3333aa" opacity="0.9"/>
+              <rect x="33" y="30" width="34" height="20" rx="2" fill="white" opacity="0.8"/>
+              <rect x="33" y="56" width="8" height="6" rx="1" fill="white" opacity="0.6"/>
+              <rect x="43" y="56" width="8" height="6" rx="1" fill="white" opacity="0.6"/>
+              <rect x="53" y="56" width="8" height="6" rx="1" fill="white" opacity="0.6"/>
+              <rect x="33" y="65" width="8" height="6" rx="1" fill="white" opacity="0.6"/>
+              <rect x="43" y="65" width="8" height="6" rx="1" fill="white" opacity="0.6"/>
+              <rect x="53" y="65" width="8" height="6" rx="1" fill="white" opacity="0.6"/>
+            </svg>
+          </div>
+          <div class="produto-info">
+            <span class="produto-cat">Telefonia IP</span>
+            <h4>Yealink T54W</h4>
+            <p>Telefone IP executivo com tela colorida, suporte a múltiplas linhas e compatibilidade com principais sistemas de PBX e UCaaS.</p>
+            <a href="https://wa.me/5511999999999?text=Olá! Tenho interesse no Yealink T54W." target="_blank" class="produto-cta">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Pedir cotação
+            </a>
+          </div>
+        </div>
+
+        <div class="produto-card" data-cat="cameras">
+          <div class="produto-badge">HP Poly</div>
+          <div class="produto-img camera-img">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="40" fill="#e8f4ff"/>
+              <rect x="20" y="38" width="48" height="32" rx="5" fill="#0066cc" opacity="0.85"/>
+              <circle cx="44" cy="54" r="10" fill="white" opacity="0.3"/>
+              <circle cx="44" cy="54" r="6" fill="white" opacity="0.5"/>
+              <circle cx="44" cy="54" r="3" fill="#003399"/>
+              <rect x="68" y="42" width="8" height="8" rx="2" fill="#0066cc"/>
+              <line x1="44" y1="70" x2="44" y2="78" stroke="#0066cc" stroke-width="3"/>
+              <rect x="32" y="76" width="24" height="3" rx="1.5" fill="#0066cc"/>
+            </svg>
+          </div>
+          <div class="produto-info">
+            <span class="produto-cat">Câmeras</span>
+            <h4>Poly Studio P21</h4>
+            <p>Monitor all-in-one com câmera 4K integrada, alto-falantes e microfone para uma experiência de reunião perfeita no home office.</p>
+            <a href="https://wa.me/5511999999999?text=Olá! Tenho interesse no Poly Studio P21." target="_blank" class="produto-cta">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Pedir cotação
+            </a>
+          </div>
+        </div>
+
+        <div class="produto-card" data-cat="video">
+          <div class="produto-badge jabra-badge">Jabra</div>
+          <div class="produto-img video-img jabra-video-bg">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="40" fill="#fff5f0"/>
+              <rect x="20" y="38" width="48" height="28" rx="4" fill="#cc4400" opacity="0.85"/>
+              <circle cx="44" cy="52" r="8" fill="white" opacity="0.3"/>
+              <circle cx="44" cy="52" r="4" fill="white" opacity="0.6"/>
+              <rect x="68" y="42" width="8" height="7" rx="2" fill="#cc4400"/>
+              <rect x="20" y="66" width="48" height="3" rx="1.5" fill="#cc4400" opacity="0.5"/>
+            </svg>
+          </div>
+          <div class="produto-info">
+            <span class="produto-cat">Videoconferência</span>
+            <h4>Jabra PanaCast 50</h4>
+            <p>Câmera panorâmica 180° com IA integrada para salas de reunião. Detecção automática de participantes e enquadramento inteligente.</p>
+            <a href="https://wa.me/5511999999999?text=Olá! Tenho interesse no Jabra PanaCast 50." target="_blank" class="produto-cta">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Pedir cotação
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA WHATSAPP -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-text">
+          <h2>Precisa de ajuda para escolher o equipamento certo?</h2>
+          <p>Nossa equipe especializada está pronta para te ajudar a encontrar a melhor solução para o seu negócio. Atendemos pelo WhatsApp!</p>
+        </div>
+        <div class="cta-actions">
+          <a href="https://wa.me/5511999999999" target="_blank" class="btn-whatsapp-big">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Chamar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contato" id="contato">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Contato</div>
+        <h2 class="section-title">Entre em contato</h2>
+        <p class="section-sub">Atendemos empresas de todos os tamanhos. Solicite sua cotação!</p>
+      </div>
+      <div class="contato-grid">
+        <div class="contato-card">
+          <div class="contato-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+          </div>
+          <h4>WhatsApp</h4>
+          <p>Fale diretamente com nossa equipe. Respondemos rápido!</p>
+          <a href="https://wa.me/5511999999999" target="_blank">(11) 99999-9999</a>
+        </div>
+        <div class="contato-card">
+          <div class="contato-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h4>E-mail</h4>
+          <p>Envie sua solicitação por e-mail para nossa equipe comercial.</p>
+          <a href="mailto:contato@{nome da empresa}.com.br">contato@{nome da empresa}.com.br</a>
+        </div>
+        <div class="contato-card">
+          <div class="contato-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h4>Localização</h4>
+          <p>Atendemos em todo o território nacional com entrega para todo o Brasil.</p>
+          <span>São Paulo, SP</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-chip">{nome da empresa}</span>
+          </a>
+          <p>Soluções em comunicação empresarial. Distribuidor autorizado HP Poly, Jabra, Logitech e Yealink.</p>
+          <a href="https://wa.me/5511999999999" target="_blank" class="footer-wa">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            (11) 99999-9999
+          </a>
+        </div>
+        <div class="footer-links">
+          <h5>Navegação</h5>
+          <a href="#sobre">Sobre</a>
+          <a href="#marcas">Marcas</a>
+          <a href="#produtos">Produtos</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <div class="footer-links">
+          <h5>Marcas</h5>
+          <a href="https://www.hp.com/br-pt/poly.html" target="_blank">HP Poly</a>
+          <a href="https://www.jabra.com/pt-BR" target="_blank">Jabra</a>
+          <a href="https://www.logitech.com/pt-br/products/video-conferencing.html" target="_blank">Logitech</a>
+          <a href="https://yealink.com.br/" target="_blank">Yealink</a>
+        </div>
+        <div class="footer-links">
+          <h5>Categorias</h5>
+          <a href="#produtos">Headsets</a>
+          <a href="#produtos">Videoconferência</a>
+          <a href="#produtos">Telefonia IP</a>
+          <a href="#produtos">Câmeras</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 {nome da empresa}. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5511999999999" target="_blank" class="wa-float" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
