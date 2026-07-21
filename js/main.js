@@ -78,3 +78,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const style = document.createElement('style');
 style.textContent = '@keyframes fadeIn { from { opacity:0; transform: translateY(12px); } to { opacity:1; transform: translateY(0); } }';
 document.head.appendChild(style);
+
+// Botão "voltar ao topo" (presente em páginas mais longas)
+const backToTop = document.getElementById('back-to-top');
+if (backToTop) {
+  window.addEventListener('scroll', () => {
+    backToTop.classList.toggle('visible', window.scrollY > 500);
+  });
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+// Links "Por porte" (ex: rodapé da home) guardam o filtro de segmento
+// desejado para ser aplicado assim que o catálogo carregar
+document.querySelectorAll('[data-segment-footer]').forEach(el => {
+  el.addEventListener('click', () => {
+    sessionStorage.setItem('pendingSegmentFilter', el.dataset.segmentFooter);
+  });
+});
