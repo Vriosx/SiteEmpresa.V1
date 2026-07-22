@@ -1,4 +1,4 @@
-// Fonte única de dados do catálogo — usada por produtos.html e produto.html
+// Fonte única de dados do catálogo  usada por produtos.html e produto.html
 window.CATALOG = {
   brands: {
   "poly": {
@@ -46,7 +46,7 @@ window.CATALOG = {
   "enterprise": {
     "label": "Enterprise",
     "tagline": "Salas de diretoria, auditórios e grandes operações",
-    "desc": "Equipamentos de ponta para salas de diretoria, auditórios e grandes salas — máxima performance, presença e qualidade de imagem e áudio.",
+    "desc": "Equipamentos de ponta para salas de diretoria, auditórios e grandes salas  máxima performance, presença e qualidade de imagem e áudio.",
     "usos": [
       "Salas de diretoria",
       "Auditórios",
@@ -94,6 +94,7 @@ window.CATALOG = {
     "segment": "enterprise",
     "tier": "topo-de-linha",
     "desc": "Sistema de videoconferência de altíssima performance para auditórios e salas de diretoria, com dupla câmera 4K e inteligência artificial avançada.",
+    "image": "images/produtos/poly-studio-x72.jpg",
     "highlights": [
       "Câmera Ultra HD com correção automática de imagem",
       "Enquadramento automático por inteligência artificial",
@@ -134,6 +135,7 @@ window.CATALOG = {
     "segment": "business",
     "tier": "topo-de-linha",
     "desc": "Barra de videoconferência all-in-one desenvolvida para salas de reunião de médio porte, com câmera dupla 4K e enquadramento automático por IA.",
+    "image": "images/produtos/poly-studio-x52.jpg",
     "highlights": [
       "Câmera Ultra HD com correção automática de imagem",
       "Enquadramento automático por inteligência artificial",
@@ -174,6 +176,7 @@ window.CATALOG = {
     "segment": "small-business",
     "tier": "recomendado",
     "desc": "Barra de vídeo compacta tudo-em-um, ideal para huddle rooms e salas pequenas que exigem qualidade profissional sem ocupar espaço.",
+    "image": "images/produtos/poly-studio-x32.jpg",
     "highlights": [
       "Câmera Ultra HD com correção automática de imagem",
       "Enquadramento automático por inteligência artificial",
@@ -214,6 +217,7 @@ window.CATALOG = {
     "segment": "business",
     "tier": "recomendado",
     "desc": "Câmera inteligente com rastreamento de grupo e vozes, projetada para se integrar a soluções Poly Studio em salas de médio porte.",
+    "image": "images/produtos/poly-studio-e70.jpg",
     "highlights": [
       "Câmera Ultra HD com correção automática de imagem",
       "Enquadramento automático por inteligência artificial",
@@ -254,6 +258,7 @@ window.CATALOG = {
     "segment": "business",
     "tier": "custo-beneficio",
     "desc": "Barra de vídeo versátil para salas médias, com boa relação custo-benefício sem abrir mão dos recursos essenciais de IA.",
+    "image": "images/produtos/poly-studio-v52.jpg",
     "highlights": [
       "Câmera Ultra HD com correção automática de imagem",
       "Enquadramento automático por inteligência artificial",
@@ -294,6 +299,7 @@ window.CATALOG = {
     "segment": "small-business",
     "tier": "custo-beneficio",
     "desc": "Câmera USB para videoconferência em pequenos espaços, com ótimo custo-benefício para huddle rooms e salas compactas.",
+    "image": "images/produtos/poly-studio-v12.jpg",
     "highlights": [
       "Câmera Ultra HD com correção automática de imagem",
       "Enquadramento automático por inteligência artificial",
@@ -334,6 +340,7 @@ window.CATALOG = {
     "segment": "enterprise",
     "tier": null,
     "desc": "Headset sem fio com cancelamento ativo de ruído para máxima concentração e clareza de áudio nas chamadas mais exigentes.",
+    "image": "images/produtos/poly-voyager-focus-2.jpg",
     "highlights": [
       "Microfone com cancelamento de ruído para chamadas mais claras",
       "Conforto para uso prolongado com almofadas ajustáveis",
@@ -372,6 +379,7 @@ window.CATALOG = {
     "segment": "business",
     "tier": null,
     "desc": "Fones intra-auriculares sem fio com estojo carregador inteligente, ideais para quem está sempre em movimento entre reuniões.",
+    "image": "images/produtos/poly-voyager-free-60plus.jpg",
     "highlights": [
       "Microfone com cancelamento de ruído para chamadas mais claras",
       "Conforto para uso prolongado com almofadas ajustáveis",
@@ -410,6 +418,7 @@ window.CATALOG = {
     "segment": "business",
     "tier": null,
     "desc": "Headset Bluetooth profissional com base de carregamento, ideal para escritórios híbridos e mobilidade no dia a dia.",
+    "image": "images/produtos/poly-voyager-4320-uc.jpg",
     "highlights": [
       "Microfone com cancelamento de ruído para chamadas mais claras",
       "Conforto para uso prolongado com almofadas ajustáveis",
@@ -448,6 +457,7 @@ window.CATALOG = {
     "segment": "enterprise",
     "tier": null,
     "desc": "Headset com fio USB e ANC avançado, perfeito para ambientes ruidosos e operações críticas de contact center.",
+    "image": "images/produtos/poly-blackwire-8225.jpg",
     "highlights": [
       "Microfone com cancelamento de ruído para chamadas mais claras",
       "Conforto para uso prolongado com almofadas ajustáveis",
@@ -486,6 +496,7 @@ window.CATALOG = {
     "segment": "small-business",
     "tier": null,
     "desc": "Headset com fio de entrada, simples e confiável, para uso diário em pequenos escritórios e home office.",
+    "image": "images/produtos/poly-blackwire-3325.jpg",
     "highlights": [
       "Microfone com cancelamento de ruído para chamadas mais claras",
       "Conforto para uso prolongado com almofadas ajustáveis",
@@ -524,6 +535,7 @@ window.CATALOG = {
     "segment": "enterprise",
     "tier": null,
     "desc": "Barra de videoconferência tudo-em-um com câmera AI, microfones beamforming e alto-falantes integrados para salas maiores.",
+    "image": "images/produtos/logitech-rally-bar.jpg",
     "highlights": [
       "Câmera Ultra HD com correção automática de imagem",
       "Enquadramento automático por inteligência artificial",
@@ -564,6 +576,7 @@ window.CATALOG = {
     "segment": "business",
     "tier": null,
     "desc": "Versão compacta da Rally Bar para salas de médio porte, mantendo a qualidade de imagem e áudio premium da linha Rally.",
+    "image": "images/produtos/logitech-rally-bar-mini.jpg",
     "highlights": [
       "Câmera Ultra HD com correção automática de imagem",
       "Enquadramento automático por inteligência artificial",
@@ -604,6 +617,7 @@ window.CATALOG = {
     "segment": "enterprise",
     "tier": null,
     "desc": "Kit premium de videoconferência com câmera PTZ de alta qualidade, viva-voz expansível e controle remoto dedicado.",
+    "image": "images/produtos/logitech-rally-plus.jpg",
     "highlights": [
       "Câmera Ultra HD com correção automática de imagem",
       "Enquadramento automático por inteligência artificial",
@@ -643,7 +657,8 @@ window.CATALOG = {
     "name": "Logitech MeetUp 2",
     "segment": "small-business",
     "tier": "mais-vendido",
-    "desc": "Nova geração da câmera conferencebar compacta, com lente grande angular e IA aprimorada — a substituta natural da MeetUp original.",
+    "desc": "Nova geração da câmera conferencebar compacta, com lente grande angular e IA aprimorada  a substituta natural da MeetUp original.",
+    "image": "images/produtos/logitech-meetup-2.jpg",
     "highlights": [
       "Câmera Ultra HD com correção automática de imagem",
       "Enquadramento automático por inteligência artificial",
@@ -684,6 +699,7 @@ window.CATALOG = {
     "segment": "business",
     "tier": null,
     "desc": "Appliance de sala que transforma qualquer PC certificado em um sistema completo de videoconferência gerenciável remotamente.",
+    "image": "images/produtos/logitech-roommate.jpg",
     "highlights": [
       "Câmera Ultra HD com correção automática de imagem",
       "Enquadramento automático por inteligência artificial",
@@ -723,7 +739,8 @@ window.CATALOG = {
     "name": "Logitech MX Brio 4K",
     "segment": "enterprise",
     "tier": "mais-vendido",
-    "desc": "Webcam 4K premium com HDR, reconhecimento facial e ajuste automático de luz — hoje a webcam mais vendida da Logitech.",
+    "desc": "Webcam 4K premium com HDR, reconhecimento facial e ajuste automático de luz  hoje a webcam mais vendida da Logitech.",
+    "image": "images/produtos/logitech-mx-brio-4k.jpg",
     "highlights": [
       "Resolução de alta definição para imagem nítida",
       "Campo de visão amplo com ajuste automático de enquadramento",
@@ -760,6 +777,7 @@ window.CATALOG = {
     "segment": "business",
     "tier": null,
     "desc": "Webcam Full HD com IA para enquadramento automático, ideal para o profissional híbrido que vive em videochamadas.",
+    "image": "images/produtos/logitech-brio-505.jpg",
     "highlights": [
       "Resolução de alta definição para imagem nítida",
       "Campo de visão amplo com ajuste automático de enquadramento",
@@ -796,6 +814,7 @@ window.CATALOG = {
     "segment": "small-business",
     "tier": null,
     "desc": "Webcam compacta e acessível, com boa qualidade de imagem para o essencial das videochamadas do dia a dia.",
+    "image": "images/produtos/logitech-brio-305.jpg",
     "highlights": [
       "Resolução de alta definição para imagem nítida",
       "Campo de visão amplo com ajuste automático de enquadramento",
@@ -832,6 +851,7 @@ window.CATALOG = {
     "segment": "enterprise",
     "tier": "mais-vendido",
     "desc": "Headset sem fio premium com cancelamento de ruído híbrido, certificado para as principais plataformas de colaboração.",
+    "image": "images/produtos/logitech-zone-wireless-2.jpg",
     "highlights": [
       "Microfone com cancelamento de ruído para chamadas mais claras",
       "Conforto para uso prolongado com almofadas ajustáveis",
@@ -870,6 +890,7 @@ window.CATALOG = {
     "segment": "business",
     "tier": null,
     "desc": "Headset sem fio leve e confortável, com boa autonomia de bateria para o uso corporativo do dia a dia.",
+    "image": "images/produtos/logitech-zone-vibe-wireless.jpg",
     "highlights": [
       "Microfone com cancelamento de ruído para chamadas mais claras",
       "Conforto para uso prolongado com almofadas ajustáveis",
@@ -908,6 +929,7 @@ window.CATALOG = {
     "segment": "small-business",
     "tier": null,
     "desc": "Headset com fio simples e eficiente, ideal para quem busca qualidade Logitech com investimento reduzido.",
+    "image": "images/produtos/logitech-zone-wired.jpg",
     "highlights": [
       "Microfone com cancelamento de ruído para chamadas mais claras",
       "Conforto para uso prolongado com almofadas ajustáveis",
@@ -946,6 +968,7 @@ window.CATALOG = {
     "segment": "enterprise",
     "tier": null,
     "desc": "Câmera panorâmica 180° com IA integrada para salas de reunião, com detecção automática de participantes.",
+    "image": "images/produtos/jabra-panacast-50.jpg",
     "highlights": [
       "Câmera Ultra HD com correção automática de imagem",
       "Enquadramento automático por inteligência artificial",
@@ -986,6 +1009,7 @@ window.CATALOG = {
     "segment": "business",
     "tier": null,
     "desc": "Sistema completo tudo-em-um que combina a câmera panorâmica PanaCast 50 com processamento de vídeo integrado.",
+    "image": "images/produtos/jabra-panacast-50-vbs.jpg",
     "highlights": [
       "Câmera Ultra HD com correção automática de imagem",
       "Enquadramento automático por inteligência artificial",
@@ -1026,6 +1050,7 @@ window.CATALOG = {
     "segment": "small-business",
     "tier": null,
     "desc": "Webcam 4K inteligente com enquadramento automático, perfeita para mesas individuais e salas pequenas.",
+    "image": "images/produtos/jabra-panacast-20.jpg",
     "highlights": [
       "Câmera Ultra HD com correção automática de imagem",
       "Enquadramento automático por inteligência artificial",
@@ -1066,6 +1091,7 @@ window.CATALOG = {
     "segment": "enterprise",
     "tier": null,
     "desc": "O headset mais avançado da linha Evolve2, com ANC inteligente por IA e design premium para o executivo exigente.",
+    "image": "images/produtos/jabra-evolve2-85.jpg",
     "highlights": [
       "Microfone com cancelamento de ruído para chamadas mais claras",
       "Conforto para uso prolongado com almofadas ajustáveis",
@@ -1104,6 +1130,7 @@ window.CATALOG = {
     "segment": "business",
     "tier": null,
     "desc": "Headset sem fio versátil com excelente cancelamento de ruído, equilíbrio entre performance e investimento.",
+    "image": "images/produtos/jabra-evolve2-75.jpg",
     "highlights": [
       "Microfone com cancelamento de ruído para chamadas mais claras",
       "Conforto para uso prolongado com almofadas ajustáveis",
@@ -1141,7 +1168,8 @@ window.CATALOG = {
     "name": "Jabra Evolve2 65 Flex",
     "segment": "business",
     "tier": "mais-vendido",
-    "desc": "Versão Flex do Evolve2 65, com hastes flexíveis e ótima portabilidade — hoje um dos headsets mais vendidos da Jabra.",
+    "desc": "Versão Flex do Evolve2 65, com hastes flexíveis e ótima portabilidade  hoje um dos headsets mais vendidos da Jabra.",
+    "image": "images/produtos/jabra-evolve2-65-flex.jpg",
     "highlights": [
       "Microfone com cancelamento de ruído para chamadas mais claras",
       "Conforto para uso prolongado com almofadas ajustáveis",
@@ -1180,6 +1208,7 @@ window.CATALOG = {
     "segment": "small-business",
     "tier": null,
     "desc": "Headset de entrada da linha Evolve2, com ótimo custo-benefício e cancelamento de ruído eficiente.",
+    "image": "images/produtos/jabra-evolve2-55.jpg",
     "highlights": [
       "Microfone com cancelamento de ruído para chamadas mais claras",
       "Conforto para uso prolongado com almofadas ajustáveis",
@@ -1218,6 +1247,7 @@ window.CATALOG = {
     "segment": "enterprise",
     "tier": null,
     "desc": "Headset profissional voltado a contact centers de alto volume, com áudio de nível corporativo e alto alcance sem fio.",
+    "image": "images/produtos/jabra-engage-55.jpg",
     "highlights": [
       "Microfone com cancelamento de ruído para chamadas mais claras",
       "Conforto para uso prolongado com almofadas ajustáveis",
@@ -1255,7 +1285,8 @@ window.CATALOG = {
     "name": "Jabra Speak2 75",
     "segment": "enterprise",
     "tier": "mais-vendido",
-    "desc": "Speakerphone premium com cancelamento de ruído por IA — o viva-voz mais vendido da Jabra para salas híbridas.",
+    "desc": "Speakerphone premium com cancelamento de ruído por IA  o viva-voz mais vendido da Jabra para salas híbridas.",
+    "image": "images/produtos/jabra-speak2-75.jpg",
     "highlights": [
       "Microfones de 360° para captar vozes em toda a sala",
       "Cancelamento de ruído e eco por inteligência artificial",
@@ -1293,6 +1324,7 @@ window.CATALOG = {
     "segment": "business",
     "tier": null,
     "desc": "Speakerphone versátil e portátil, com ótima captação de voz para salas de reunião de médio porte.",
+    "image": "images/produtos/jabra-speak2-55.jpg",
     "highlights": [
       "Microfones de 360° para captar vozes em toda a sala",
       "Cancelamento de ruído e eco por inteligência artificial",
@@ -1330,6 +1362,7 @@ window.CATALOG = {
     "segment": "small-business",
     "tier": null,
     "desc": "Speakerphone compacto e acessível, ideal para pequenas salas e uso individual em home office.",
+    "image": "images/produtos/jabra-speak2-40.jpg",
     "highlights": [
       "Microfones de 360° para captar vozes em toda a sala",
       "Cancelamento de ruído e eco por inteligência artificial",
@@ -1366,7 +1399,8 @@ window.CATALOG = {
     "name": "Yealink MeetingBar A40",
     "segment": "enterprise",
     "tier": "mais-vendido",
-    "desc": "Sistema de videoconferência premium com câmera de alta resolução e áudio inteligente — o modelo mais vendido da linha MeetingBar.",
+    "desc": "Sistema de videoconferência premium com câmera de alta resolução e áudio inteligente  o modelo mais vendido da linha MeetingBar.",
+    "image": "images/produtos/yealink-meetingbar-a40.jpg",
     "highlights": [
       "Câmera Ultra HD com correção automática de imagem",
       "Enquadramento automático por inteligência artificial",
@@ -1407,6 +1441,7 @@ window.CATALOG = {
     "segment": "business",
     "tier": null,
     "desc": "Barra de videoconferência para salas médias, com câmera de qualidade e áudio inteligente integrado.",
+    "image": "images/produtos/yealink-meetingbar-a30.jpg",
     "highlights": [
       "Câmera Ultra HD com correção automática de imagem",
       "Enquadramento automático por inteligência artificial",
@@ -1447,6 +1482,7 @@ window.CATALOG = {
     "segment": "small-business",
     "tier": null,
     "desc": "Barra de vídeo compacta para huddle rooms e salas pequenas, com ótimo custo-benefício.",
+    "image": "images/produtos/yealink-meetingbar-a20.jpg",
     "highlights": [
       "Câmera Ultra HD com correção automática de imagem",
       "Enquadramento automático por inteligência artificial",
@@ -1487,6 +1523,7 @@ window.CATALOG = {
     "segment": "enterprise",
     "tier": null,
     "desc": "Câmera inteligente para salas grandes, com rastreamento automático de participantes e integração aos sistemas MeetingBar.",
+    "image": "images/produtos/yealink-smartvision-60.jpg",
     "highlights": [
       "Resolução de alta definição para imagem nítida",
       "Campo de visão amplo com ajuste automático de enquadramento",
@@ -1523,6 +1560,7 @@ window.CATALOG = {
     "segment": "enterprise",
     "tier": null,
     "desc": "Telefone IP topo de linha certificado para Microsoft Teams, com tela touch em cores e design premium.",
+    "image": "images/produtos/yealink-mp58-teams.jpg",
     "highlights": [
       "Áudio HD com tecnologia de voz nítida",
       "Suporte a múltiplas linhas SIP e integração com PBX/UCaaS",
@@ -1560,6 +1598,7 @@ window.CATALOG = {
     "segment": "business",
     "tier": null,
     "desc": "Telefone IP certificado para Microsoft Teams, com tela colorida e recursos completos para o dia a dia corporativo.",
+    "image": "images/produtos/yealink-mp56-teams.jpg",
     "highlights": [
       "Áudio HD com tecnologia de voz nítida",
       "Suporte a múltiplas linhas SIP e integração com PBX/UCaaS",
@@ -1597,6 +1636,7 @@ window.CATALOG = {
     "segment": "business",
     "tier": null,
     "desc": "Telefone IP executivo com tela colorida, suporte a múltiplas linhas e compatibilidade com PBX e UCaaS.",
+    "image": "images/produtos/yealink-sipt54w.jpg",
     "highlights": [
       "Áudio HD com tecnologia de voz nítida",
       "Suporte a múltiplas linhas SIP e integração com PBX/UCaaS",
@@ -1634,6 +1674,7 @@ window.CATALOG = {
     "segment": "small-business",
     "tier": null,
     "desc": "Telefone IP Gigabit com tela HD colorida, indicado para uso administrativo de bom volume de chamadas.",
+    "image": "images/produtos/yealink-sipt46u.jpg",
     "highlights": [
       "Áudio HD com tecnologia de voz nítida",
       "Suporte a múltiplas linhas SIP e integração com PBX/UCaaS",
@@ -1671,6 +1712,7 @@ window.CATALOG = {
     "segment": "enterprise",
     "tier": null,
     "desc": "Headset sem fio premium com cancelamento de ruído avançado e estojo de carregamento, para o executivo em trânsito.",
+    "image": "images/produtos/yealink-bh76-plus.jpg",
     "highlights": [
       "Microfone com cancelamento de ruído para chamadas mais claras",
       "Conforto para uso prolongado com almofadas ajustáveis",
@@ -1709,6 +1751,7 @@ window.CATALOG = {
     "segment": "business",
     "tier": null,
     "desc": "Headset Bluetooth versátil com bom cancelamento de ruído, indicado para profissionais híbridos.",
+    "image": "images/produtos/yealink-bh70.jpg",
     "highlights": [
       "Microfone com cancelamento de ruído para chamadas mais claras",
       "Conforto para uso prolongado com almofadas ajustáveis",
@@ -1747,6 +1790,7 @@ window.CATALOG = {
     "segment": "small-business",
     "tier": null,
     "desc": "Headset com fio de ótimo custo-benefício, indicado para uso diário em call centers e escritórios administrativos.",
+    "image": "images/produtos/yealink-uh38.jpg",
     "highlights": [
       "Microfone com cancelamento de ruído para chamadas mais claras",
       "Conforto para uso prolongado com almofadas ajustáveis",

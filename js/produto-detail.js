@@ -77,7 +77,12 @@
         ${badge}
         ${tier}
         <a href="produto.html?id=${p.id}" class="produto-img-link">
-          <div class="produto-img">${icon}</div>
+          <div class="produto-img">
+            <!-- Adicione aqui a imagem do produto: ${p.image} -->
+            <img src="${p.image}" alt="${p.name}" loading="lazy"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="produto-img-fallback">${icon}</span>
+          </div>
         </a>
         <div class="produto-info">
           <div class="produto-tags-row">
@@ -121,7 +126,7 @@
     const icon = ICONS[product.cat](b.color, b.light);
     const catLabel = catalog.catLabels[product.cat];
 
-    document.title = `${product.name} — ${b.label} | {nome da empresa}`;
+    document.title = `${product.name}  ${b.label} | VC Serviços`;
     const metaDesc = document.getElementById('page-desc');
     if (metaDesc) metaDesc.setAttribute('content', product.desc);
 
@@ -167,6 +172,9 @@
           <div class="produto-hero-visual">
             <div class="produto-badge ${b.badgeclass}">${b.label}</div>
             ${tierBadge}
+            <!-- Adicione aqui a imagem do produto: ${product.image} -->
+            <img class="produto-hero-photo" src="${product.image}" alt="${product.name}" loading="lazy"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
             <div class="produto-hero-icon">${icon}</div>
           </div>
           <div class="produto-hero-info">

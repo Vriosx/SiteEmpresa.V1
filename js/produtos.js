@@ -1,4 +1,4 @@
-// Sidebar + filtros do catálogo — produtos.html
+// Sidebar + filtros do catálogo  produtos.html
 (function () {
   const sidebar = document.getElementById('catalogo-sidebar');
   if (!sidebar) return;
