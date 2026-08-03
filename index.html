@@ -1,616 +1,294 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VC Serviços  Soluções em Comunicação Empresarial</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>VC Serviços — Videoconferência e Projetos Audiovisuais Corporativos</title>
+<meta name="description" content="Projetamos, instalamos e damos suporte a salas de reunião com videoconferência, áudio profissional e automação. Soluções para salas pequenas e médias." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/sections.css" />
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="#" class="logo">
-        <span class="logo-chip">VC Serviços</span>
+<header class="header" id="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">VC</span>
+      VC Serviços
+    </a>
+    <nav class="nav-links">
+      <a href="produtos.html">Produtos</a>
+      <a href="#solucoes-salas">Soluções</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="header-actions">
+      <a href="https://wa.me/5511999999999?text=Olá! Quero solicitar um orçamento." target="_blank" class="btn btn-primary">
+        Solicitar Orçamento
       </a>
-      <ul class="nav-links">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#marcas">Marcas</a></li>
-        <li><a href="produtos.html">Produtos</a></li>
-        <li><a href="manutencao.html">Manutenção</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-      <a href="https://wa.me/5511999999999" target="_blank" class="btn-whatsapp">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Fale conosco
-      </a>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
     </div>
-    <div class="mobile-menu" id="mobile-menu">
-      <a href="#sobre">Sobre</a>
-      <a href="#marcas">Marcas</a>
-      <a href="produtos.html">Produtos</a>
-      <a href="manutencao.html">Manutenção</a>
-      <a href="#contato">Contato</a>
-      <a href="https://wa.me/5511999999999" target="_blank" class="btn-whatsapp-mobile">WhatsApp</a>
-    </div>
-  </nav>
+  </div>
+</header>
 
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="hero-bg">
-      <div class="hero-grid"></div>
-      <div class="hero-blob blob1"></div>
-      <div class="hero-blob blob2"></div>
-    </div>
-    <div class="hero-inner">
-      <div class="hero-tag">
-        <span class="tag-dot"></span>
-        Soluções em Comunicação Empresarial
-      </div>
-      <h1 class="hero-title">
-        Tecnologia que<br>
-        <em>conecta</em> sua<br>
-        empresa ao futuro
-      </h1>
-      <p class="hero-sub">
-        Distribuidor autorizado das maiores marcas em áudio, vídeo e comunicação. HP Poly, Jabra, Logitech e Yealink  equipamentos profissionais para o seu negócio.
-      </p>
+<div class="mobile-nav" id="mobile-nav">
+  <a href="produtos.html">Produtos</a>
+  <a href="#solucoes-salas">Soluções</a>
+  <a href="#contato">Contato</a>
+  <a href="https://wa.me/5511999999999?text=Olá! Quero solicitar um orçamento." target="_blank" class="btn btn-primary">Solicitar Orçamento</a>
+</div>
+
+<!-- ============================= HERO ============================= -->
+<section class="hero">
+  <div class="hero-media">
+    <img src="https://images.pexels.com/photos/236730/pexels-photo-236730.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Sala de reunião moderna equipada com videoconferência">
+  </div>
+
+  <div class="container hero-inner">
+    <div class="hero-content" data-reveal>
+      <h1>Sua sala de reunião, <em>pronta para o futuro</em>.</h1>
       <div class="hero-actions">
-        <a href="https://wa.me/5511999999999" target="_blank" class="btn-primary">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Solicitar orçamento
-        </a>
-        <a href="produtos.html" class="btn-outline">Ver produtos</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <strong>4</strong>
-          <span>Marcas líderes</span>
-        </div>
-        <div class="stat-div"></div>
-        <div class="stat">
-          <strong>+500</strong>
-          <span>Produtos disponíveis</span>
-        </div>
-        <div class="stat-div"></div>
-        <div class="stat">
-          <strong>B2B</strong>
-          <span>Especialista empresarial</span>
-        </div>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="visual-ring ring1"></div>
-      <div class="visual-ring ring2"></div>
-      <div class="visual-ring ring3"></div>
-      <div class="visual-center">
-        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="40" cy="40" r="38" stroke="url(#g1)" stroke-width="2"/>
-          <path d="M25 40c0-8.284 6.716-15 15-15s15 6.716 15 15-6.716 15-15 15-15-6.716-15-15z" fill="url(#g2)"/>
-          <path d="M34 35h12M34 40h8M34 45h10" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
-          <defs>
-            <linearGradient id="g1" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#00D4FF"/>
-              <stop offset="1" stop-color="#0066FF"/>
-            </linearGradient>
-            <linearGradient id="g2" x1="25" y1="25" x2="55" y2="55" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#00D4FF"/>
-              <stop offset="1" stop-color="#0066FF"/>
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
-      <div class="float-card fc1">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Atendimento via WhatsApp
-      </div>
-      <div class="float-card fc2">
-        <span class="fc2-dot"></span>
-        Distribuidor autorizado
-      </div>
-    </div>
-  </section>
-
-  <!-- SOBRE -->
-  <section class="sobre" id="sobre">
-    <div class="container">
-      <div class="sobre-inner">
-        <div class="sobre-text">
-          <div class="section-tag">Quem somos</div>
-          <h2 class="section-title">Especialistas em comunicação e colaboração corporativa</h2>
-          <p>A <strong>VC Serviços</strong> é uma empresa focada em soluções de comunicação para o mercado corporativo. Atuamos como distribuidores das principais marcas do setor, oferecendo produtos de alta qualidade para videoconferência, telefonia IP, headsets profissionais e muito mais.</p>
-          <p>Nosso compromisso é conectar empresas com as melhores tecnologias disponíveis, com suporte especializado e atendimento personalizado via WhatsApp.</p>
-          <div class="sobre-features">
-            <div class="feature">
-              <div class="feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              </div>
-              <div>
-                <strong>Produtos originais</strong>
-                <span>Garantia de fábrica em todos os equipamentos</span>
-              </div>
-            </div>
-            <div class="feature">
-              <div class="feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-              </div>
-              <div>
-                <strong>Entrega rápida</strong>
-                <span>Logística eficiente para todo o Brasil</span>
-              </div>
-            </div>
-            <div class="feature">
-              <div class="feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-              </div>
-              <div>
-                <strong>Suporte especializado</strong>
-                <span>Time técnico disponível para auxiliar</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="sobre-visual">
-          <div class="sobre-card">
-            <div class="sobre-number">10<span>+</span></div>
-            <p>anos de experiência no mercado</p>
-          </div>
-          <div class="sobre-card">
-            <div class="sobre-number">500<span>+</span></div>
-            <p>clientes corporativos atendidos</p>
-          </div>
-          <div class="sobre-card sobre-card--wide">
-            <div class="sobre-number">4</div>
-            <p>das maiores marcas mundiais em comunicação</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MARCAS -->
-  <section class="marcas" id="marcas">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-tag">Parceiros</div>
-        <h2 class="section-title">Marcas que representamos</h2>
-        <p class="section-sub">Trabalhamos com as líderes mundiais em tecnologia de comunicação</p>
-      </div>
-      <div class="marcas-grid">
-
-        <div class="marca-card" data-brand="poly">
-          <div class="marca-logo-wrap">
-            <div class="marca-logo-text poly-logo">HP Poly</div>
-          </div>
-          <div class="marca-info">
-            <h3>HP Poly</h3>
-            <p>Anteriormente Polycom e Plantronics, a HP Poly oferece soluções completas de vídeo e áudio para salas de reunião, escritórios e trabalho remoto.</p>
-            <ul>
-              <li>Salas de videoconferência</li>
-              <li>Headsets profissionais</li>
-              <li>Telefones IP</li>
-              <li>Câmeras de reunião</li>
-            </ul>
-            <a href="https://wa.me/5511999999999?text=Olá! Tenho interesse em produtos HP Poly." target="_blank" class="marca-cta">
-              Solicitar cotação
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="marca-card" data-brand="jabra">
-          <div class="marca-logo-wrap">
-            <div class="marca-logo-text jabra-logo">Jabra</div>
-          </div>
-          <div class="marca-info">
-            <h3>Jabra</h3>
-            <p>Marca líder mundial em áudio profissional, com mais de 150 anos de experiência. Presente em mais de 80% das empresas Fortune 500.</p>
-            <ul>
-              <li>Headsets sem fio</li>
-              <li>Câmeras de videoconferência</li>
-              <li>Speakerphones</li>
-              <li>Fones intra-auriculares</li>
-            </ul>
-            <a href="https://wa.me/5511999999999?text=Olá! Tenho interesse em produtos Jabra." target="_blank" class="marca-cta">
-              Solicitar cotação
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="marca-card" data-brand="logitech">
-          <div class="marca-logo-wrap">
-            <div class="marca-logo-text logitech-logo">Logitech</div>
-          </div>
-          <div class="marca-info">
-            <h3>Logitech</h3>
-            <p>Referência global em tecnologia para videoconferência. Soluções para salas de todos os tamanhos, integradas às principais plataformas de reunião.</p>
-            <ul>
-              <li>Sistemas para salas de reunião</li>
-              <li>Webcams profissionais</li>
-              <li>Câmeras PTZ</li>
-              <li>Rally Bar e Rally Camera</li>
-            </ul>
-            <a href="https://wa.me/5511999999999?text=Olá! Tenho interesse em produtos Logitech." target="_blank" class="marca-cta">
-              Solicitar cotação
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="marca-card" data-brand="yealink">
-          <div class="marca-logo-wrap">
-            <div class="marca-logo-text yealink-logo">Yealink</div>
-          </div>
-          <div class="marca-info">
-            <h3>Yealink</h3>
-            <p>Líder global em telefonia IP e soluções de colaboração unificada. Equipamentos robustos e acessíveis para empresas de todos os tamanhos.</p>
-            <ul>
-              <li>Telefones IP</li>
-              <li>Sistemas de videoconferência</li>
-              <li>Headsets Teams e Zoom</li>
-              <li>Câmeras de sala</li>
-            </ul>
-            <a href="https://wa.me/5511999999999?text=Olá! Tenho interesse em produtos Yealink." target="_blank" class="marca-cta">
-              Solicitar cotação
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PRODUTOS -->
-  <section class="produtos" id="produtos">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-tag">Catálogo</div>
-        <h2 class="section-title">Os mais procurados</h2>
-        <p class="section-sub">Uma seleção dos modelos mais vendidos e recomendados do nosso catálogo</p>
-        <a href="produtos.html" class="ver-catalogo-link">
-          Ver catálogo completo
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        <a href="produtos.html" class="btn btn-light">Ver Produtos</a>
+        <a href="https://wa.me/5511999999999?text=Olá! Quero solicitar um orçamento." target="_blank" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Solicitar Orçamento
         </a>
       </div>
-
-      <div class="produtos-grid" id="produtos-grid">
-
-        <div class="produto-card" data-cat="video" data-brand="poly" data-segment="business" data-tier="topo-de-linha">
-          <div class="produto-badge">HP Poly</div>
-          <span class="tier-tag">Topo de linha</span>
-          <a href="produto.html?id=poly-studio-x52" class="produto-img-link">
-            <div class="produto-img">
-              <!-- Adicione aqui a imagem do produto: images/produtos/poly-studio-x52.jpg -->
-              <img src="images/produtos/poly-studio-x52.jpg" alt="Poly Studio X52" loading="lazy"
-                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <span class="produto-img-fallback"><svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="50" cy="50" r="40" fill="#e8f4ff"/>
-              <rect x="20" y="38" width="48" height="28" rx="4" fill="#0066cc" opacity="0.85"/>
-              <circle cx="44" cy="52" r="8" fill="white" opacity="0.3"/>
-              <circle cx="44" cy="52" r="4" fill="white" opacity="0.6"/>
-              <rect x="68" y="42" width="8" height="7" rx="2" fill="#0066cc"/>
-              <rect x="20" y="66" width="48" height="3" rx="1.5" fill="#0066cc" opacity="0.5"/>
-            </svg></span>
-            </div>
-          </a>
-          <div class="produto-info">
-            <div class="produto-tags-row">
-              <span class="produto-cat">Videoconferência</span>
-              <span class="segment-tag segment-business">Business</span>
-            </div>
-            <h4><a href="produto.html?id=poly-studio-x52">Poly Studio X52</a></h4>
-            <p>Barra de videoconferência all-in-one desenvolvida para salas de reunião de médio porte, com câmera dupla 4K e enquadramento automático por IA.</p>
-            <div class="produto-actions">
-              <a href="produto.html?id=poly-studio-x52" class="produto-detail-link">Ver detalhes</a>
-              <a href="https://wa.me/5511999999999?text=Olá%21%20Tenho%20interesse%20no%20Poly%20Studio%20X52." target="_blank" class="produto-cta">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                Cotação
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="produto-card" data-cat="video" data-brand="yealink" data-segment="enterprise" data-tier="mais-vendido">
-          <div class="produto-badge yealink-badge">Yealink</div>
-          <span class="tier-tag">Mais vendido</span>
-          <a href="produto.html?id=yealink-meetingbar-a40" class="produto-img-link">
-            <div class="produto-img">
-              <!-- Adicione aqui a imagem do produto: images/produtos/yealink-meetingbar-a40.jpg -->
-              <img src="images/produtos/yealink-meetingbar-a40.jpg" alt="Yealink MeetingBar A40" loading="lazy"
-                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <span class="produto-img-fallback"><svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="50" cy="50" r="40" fill="#f0f0ff"/>
-              <rect x="20" y="38" width="48" height="28" rx="4" fill="#3333aa" opacity="0.85"/>
-              <circle cx="44" cy="52" r="8" fill="white" opacity="0.3"/>
-              <circle cx="44" cy="52" r="4" fill="white" opacity="0.6"/>
-              <rect x="68" y="42" width="8" height="7" rx="2" fill="#3333aa"/>
-              <rect x="20" y="66" width="48" height="3" rx="1.5" fill="#3333aa" opacity="0.5"/>
-            </svg></span>
-            </div>
-          </a>
-          <div class="produto-info">
-            <div class="produto-tags-row">
-              <span class="produto-cat">Videoconferência</span>
-              <span class="segment-tag segment-enterprise">Enterprise</span>
-            </div>
-            <h4><a href="produto.html?id=yealink-meetingbar-a40">Yealink MeetingBar A40</a></h4>
-            <p>Sistema de videoconferência premium com câmera de alta resolução e áudio inteligente  o modelo mais vendido da linha MeetingBar.</p>
-            <div class="produto-actions">
-              <a href="produto.html?id=yealink-meetingbar-a40" class="produto-detail-link">Ver detalhes</a>
-              <a href="https://wa.me/5511999999999?text=Olá%21%20Tenho%20interesse%20no%20Yealink%20MeetingBar%20A40." target="_blank" class="produto-cta">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                Cotação
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="produto-card" data-cat="headsets" data-brand="jabra" data-segment="business" data-tier="mais-vendido">
-          <div class="produto-badge jabra-badge">Jabra</div>
-          <span class="tier-tag">Mais vendido</span>
-          <a href="produto.html?id=jabra-evolve2-65-flex" class="produto-img-link">
-            <div class="produto-img">
-              <!-- Adicione aqui a imagem do produto: images/produtos/jabra-evolve2-65-flex.jpg -->
-              <img src="images/produtos/jabra-evolve2-65-flex.jpg" alt="Jabra Evolve2 65 Flex" loading="lazy"
-                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <span class="produto-img-fallback"><svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="50" cy="50" r="40" fill="#fff0e8"/>
-              <path d="M30 55c0-11.046 8.954-20 20-20s20 8.954 20 20" stroke="#cc4400" stroke-width="3" stroke-linecap="round"/>
-              <rect x="23" y="53" width="10" height="16" rx="5" fill="#cc4400"/>
-              <rect x="67" y="53" width="10" height="16" rx="5" fill="#cc4400"/>
-              <line x1="50" y1="75" x2="50" y2="82" stroke="#cc4400" stroke-width="3" stroke-linecap="round"/>
-              <circle cx="50" cy="85" r="3" fill="#cc4400"/>
-            </svg></span>
-            </div>
-          </a>
-          <div class="produto-info">
-            <div class="produto-tags-row">
-              <span class="produto-cat">Headsets</span>
-              <span class="segment-tag segment-business">Business</span>
-            </div>
-            <h4><a href="produto.html?id=jabra-evolve2-65-flex">Jabra Evolve2 65 Flex</a></h4>
-            <p>Versão Flex do Evolve2 65, com hastes flexíveis e ótima portabilidade  hoje um dos headsets mais vendidos da Jabra.</p>
-            <div class="produto-actions">
-              <a href="produto.html?id=jabra-evolve2-65-flex" class="produto-detail-link">Ver detalhes</a>
-              <a href="https://wa.me/5511999999999?text=Olá%21%20Tenho%20interesse%20no%20Jabra%20Evolve2%2065%20Flex." target="_blank" class="produto-cta">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                Cotação
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="produto-card" data-cat="cameras" data-brand="logitech" data-segment="enterprise" data-tier="mais-vendido">
-          <div class="produto-badge logitech-badge">Logitech</div>
-          <span class="tier-tag">Mais vendido</span>
-          <a href="produto.html?id=logitech-mx-brio-4k" class="produto-img-link">
-            <div class="produto-img">
-              <!-- Adicione aqui a imagem do produto: images/produtos/logitech-mx-brio-4k.jpg -->
-              <img src="images/produtos/logitech-mx-brio-4k.jpg" alt="Logitech MX Brio 4K" loading="lazy"
-                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <span class="produto-img-fallback"><svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="50" cy="50" r="40" fill="#e8ffe8"/>
-              <rect x="20" y="38" width="48" height="32" rx="5" fill="#006600" opacity="0.85"/>
-              <circle cx="44" cy="54" r="10" fill="white" opacity="0.3"/>
-              <circle cx="44" cy="54" r="6" fill="white" opacity="0.5"/>
-              <circle cx="44" cy="54" r="3" fill="#006600"/>
-              <rect x="68" y="42" width="8" height="8" rx="2" fill="#006600"/>
-              <line x1="44" y1="70" x2="44" y2="78" stroke="#006600" stroke-width="3"/>
-              <rect x="32" y="76" width="24" height="3" rx="1.5" fill="#006600"/>
-            </svg></span>
-            </div>
-          </a>
-          <div class="produto-info">
-            <div class="produto-tags-row">
-              <span class="produto-cat">Câmeras</span>
-              <span class="segment-tag segment-enterprise">Enterprise</span>
-            </div>
-            <h4><a href="produto.html?id=logitech-mx-brio-4k">Logitech MX Brio 4K</a></h4>
-            <p>Webcam 4K premium com HDR, reconhecimento facial e ajuste automático de luz  hoje a webcam mais vendida da Logitech.</p>
-            <div class="produto-actions">
-              <a href="produto.html?id=logitech-mx-brio-4k" class="produto-detail-link">Ver detalhes</a>
-              <a href="https://wa.me/5511999999999?text=Olá%21%20Tenho%20interesse%20no%20Logitech%20MX%20Brio%204K." target="_blank" class="produto-cta">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                Cotação
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="produto-card" data-cat="viva-voz" data-brand="jabra" data-segment="enterprise" data-tier="mais-vendido">
-          <div class="produto-badge jabra-badge">Jabra</div>
-          <span class="tier-tag">Mais vendido</span>
-          <a href="produto.html?id=jabra-speak2-75" class="produto-img-link">
-            <div class="produto-img">
-              <!-- Adicione aqui a imagem do produto: images/produtos/jabra-speak2-75.jpg -->
-              <img src="images/produtos/jabra-speak2-75.jpg" alt="Jabra Speak2 75" loading="lazy"
-                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <span class="produto-img-fallback"><svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="50" cy="50" r="40" fill="#fff0e8"/>
-              <circle cx="50" cy="56" r="17" fill="#cc4400" opacity="0.85"/>
-              <circle cx="50" cy="56" r="6" fill="white" opacity="0.7"/>
-              <path d="M27 42a28 28 0 000 28" stroke="#cc4400" stroke-width="3" fill="none" stroke-linecap="round"/>
-              <path d="M73 42a28 28 0 010 28" stroke="#cc4400" stroke-width="3" fill="none" stroke-linecap="round"/>
-              <path d="M50 30v10" stroke="#cc4400" stroke-width="3" stroke-linecap="round"/>
-            </svg></span>
-            </div>
-          </a>
-          <div class="produto-info">
-            <div class="produto-tags-row">
-              <span class="produto-cat">Viva-voz</span>
-              <span class="segment-tag segment-enterprise">Enterprise</span>
-            </div>
-            <h4><a href="produto.html?id=jabra-speak2-75">Jabra Speak2 75</a></h4>
-            <p>Speakerphone premium com cancelamento de ruído por IA  o viva-voz mais vendido da Jabra para salas híbridas.</p>
-            <div class="produto-actions">
-              <a href="produto.html?id=jabra-speak2-75" class="produto-detail-link">Ver detalhes</a>
-              <a href="https://wa.me/5511999999999?text=Olá%21%20Tenho%20interesse%20no%20Jabra%20Speak2%2075." target="_blank" class="produto-cta">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                Cotação
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="produto-card" data-cat="telefonia" data-brand="yealink" data-segment="enterprise" data-tier="">
-          <div class="produto-badge yealink-badge">Yealink</div>
-          
-          <a href="produto.html?id=yealink-mp58-teams" class="produto-img-link">
-            <div class="produto-img">
-              <!-- Adicione aqui a imagem do produto: images/produtos/yealink-mp58-teams.jpg -->
-              <img src="images/produtos/yealink-mp58-teams.jpg" alt="Yealink MP58 Teams" loading="lazy"
-                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <span class="produto-img-fallback"><svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="50" cy="50" r="40" fill="#f0f0ff"/>
-              <rect x="28" y="25" width="44" height="50" rx="4" fill="#3333aa" opacity="0.9"/>
-              <rect x="33" y="30" width="34" height="20" rx="2" fill="white" opacity="0.8"/>
-              <rect x="33" y="56" width="8" height="6" rx="1" fill="white" opacity="0.6"/>
-              <rect x="43" y="56" width="8" height="6" rx="1" fill="white" opacity="0.6"/>
-              <rect x="53" y="56" width="8" height="6" rx="1" fill="white" opacity="0.6"/>
-              <rect x="33" y="65" width="8" height="6" rx="1" fill="white" opacity="0.6"/>
-              <rect x="43" y="65" width="8" height="6" rx="1" fill="white" opacity="0.6"/>
-              <rect x="53" y="65" width="8" height="6" rx="1" fill="white" opacity="0.6"/>
-            </svg></span>
-            </div>
-          </a>
-          <div class="produto-info">
-            <div class="produto-tags-row">
-              <span class="produto-cat">Telefonia IP</span>
-              <span class="segment-tag segment-enterprise">Enterprise</span>
-            </div>
-            <h4><a href="produto.html?id=yealink-mp58-teams">Yealink MP58 Teams</a></h4>
-            <p>Telefone IP topo de linha certificado para Microsoft Teams, com tela touch em cores e design premium.</p>
-            <div class="produto-actions">
-              <a href="produto.html?id=yealink-mp58-teams" class="produto-detail-link">Ver detalhes</a>
-              <a href="https://wa.me/5511999999999?text=Olá%21%20Tenho%20interesse%20no%20Yealink%20MP58%20Teams." target="_blank" class="produto-cta">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                Cotação
-              </a>
-            </div>
-          </div>
-        </div>
+      <div class="hero-meta">
+        <div class="hero-meta-item"><strong>50+</strong><span>Salas instaladas</span></div>
+        <div class="hero-meta-item"><strong>4</strong><span>Marcas parceiras</span></div>
+        <div class="hero-meta-item"><strong>24h</strong><span>Suporte técnico</span></div>
       </div>
     </div>
-  </section>
+  </div>
 
+</section>
 
+<section class="section" id="solucoes-salas">
+  <div class="container">
+    <div class="section-head center" data-reveal>
+      <h2>Qual é o seu tipo de sala?</h2>
+      <p>Cada ambiente tem uma necessidade diferente. Veja o caminho recomendado para o seu.</p>
+    </div>
 
-  <!-- CTA WHATSAPP -->
-  <section class="cta-section">
-    <div class="container">
-      <div class="cta-inner">
-        <div class="cta-text">
-          <h2>Precisa de ajuda para escolher o equipamento certo?</h2>
-          <p>Nossa equipe especializada está pronta para te ajudar a encontrar a melhor solução para o seu negócio. Atendemos pelo WhatsApp!</p>
+    <div class="room-grid">
+      <article class="card room-card" data-reveal>
+        <div class="media">
+          <img src="https://images.pexels.com/photos/3767170/pexels-photo-3767170.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Sala pequena equipada com videoconferência" loading="lazy">
         </div>
-        <div class="cta-actions">
-          <a href="https://wa.me/5511999999999" target="_blank" class="btn-whatsapp-big">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Chamar no WhatsApp
+        <div class="room-card-body">
+          <span class="room-card-index">01 — Até 5 pessoas</span>
+          <h3>Sala Pequena</h3>
+          <p>Huddle rooms, sem cabos aparentes e visual limpo.</p>
+          <a href="produtos.html?tipo=pequena" class="link-arrow">
+            Ver Projeto
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
-      </div>
-    </div>
-  </section>
+      </article>
 
-  <!-- CONTATO -->
-  <section class="contato" id="contato">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-tag">Contato</div>
-        <h2 class="section-title">Entre em contato</h2>
-        <p class="section-sub">Atendemos empresas de todos os tamanhos. Solicite sua cotação!</p>
-      </div>
-      <div class="contato-grid">
-        <div class="contato-card">
-          <div class="contato-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
-          </div>
-          <h4>WhatsApp</h4>
-          <p>Fale diretamente com nossa equipe. Respondemos rápido!</p>
-          <a href="https://wa.me/5511999999999" target="_blank">(11) 99999-9999</a>
+      <article class="card room-card" data-reveal>
+        <div class="media">
+          <img src="https://images.pexels.com/photos/159805/meeting-modern-room-conference-159805.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Sala média equipada com videoconferência" loading="lazy">
         </div>
-        <div class="contato-card">
-          <div class="contato-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-          </div>
-          <h4>E-mail</h4>
-          <p>Envie sua solicitação por e-mail para nossa equipe comercial.</p>
-          <a href="mailto:contato@vcservicos.com.br">contato@vcservicos.com.br</a>
-        </div>
-        <div class="contato-card">
-          <div class="contato-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-          </div>
-          <h4>Localização</h4>
-          <p>Atendemos em todo o território nacional com entrega para todo o Brasil.</p>
-          <span>São Paulo, SP</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <a href="#" class="logo">
-            <span class="logo-chip">VC Serviços</span>
-          </a>
-          <p>Soluções em comunicação empresarial. Distribuidor autorizado HP Poly, Jabra, Logitech e Yealink.</p>
-          <a href="https://wa.me/5511999999999" target="_blank" class="footer-wa">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            (11) 99999-9999
+        <div class="room-card-body">
+          <span class="room-card-index"> 06 — Até 12 pessoas</span>
+          <h3>Sala Média</h3>
+          <p>Câmera inteligente e áudio profissional para reuniões corporativas do dia a dia.</p>
+          <a href="produtos.html?tipo=media" class="link-arrow">
+            Ver Projeto
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
-        <div class="footer-links">
-          <h5>Navegação</h5>
-          <a href="#sobre">Sobre</a>
-          <a href="#marcas">Marcas</a>
-          <a href="produtos.html">Produtos</a>
-          <a href="manutencao.html">Manutenção</a>
-          <a href="#contato">Contato</a>
+      </article>
+
+      <article class="card room-card" data-reveal>
+        <div class="media">
+          <img src="https://images.pexels.com/photos/9300726/pexels-photo-9300726.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Sala de treinamento equipada com projeção e som" loading="lazy">
         </div>
-        <div class="footer-links">
-          <h5>Marcas</h5>
-          <a href="https://www.hp.com/br-pt/poly.html" target="_blank">HP Poly</a>
-          <a href="https://www.logitech.com/pt-br/products/video-conferencing.html" target="_blank">Logitech</a>
-          <a href="https://www.jabra.com/pt-BR" target="_blank">Jabra</a>
-          <a href="https://yealink.com.br/" target="_blank">Yealink</a>
+        <div class="room-card-body">
+          <span class="room-card-index"> 20+ pessoas</span>
+          <h3>Sala de Treinamento</h3>
+          <p>Tela grande e som distribuído para apresentações e treinamentos.</p>
+          <a href="produtos.html?tipo=treinamento" class="link-arrow">
+            Ver Projeto
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
         </div>
-        <div class="footer-links">
-          <h5>Por porte</h5>
-          <a href="produtos.html#catalogo" data-segment-footer="enterprise">Enterprise</a>
-          <a href="produtos.html#catalogo" data-segment-footer="business">Business</a>
-          <a href="produtos.html#catalogo" data-segment-footer="small-business">Small Business</a>
-        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================= SOLUÇÕES ========================= -->
+<section class="section" id="solucoes">
+  <div class="container">
+    <div class="section-head center" data-reveal>
+      <h2>Tudo o que sua sala precisa</h2>
+    </div>
+
+    <div class="solutions-grid">
+      <div class="solution-card" data-reveal>
+        <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="6" width="14" height="12" rx="3"/><path d="M16 10l6-3v10l-6-3"/></svg></div>
+        <h3>Videoconferência</h3>
+        <p>Câmeras, softwares e integrações para reuniões nítidas.</p>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 VC Serviços. Todos os direitos reservados.</p>
+      <div class="solution-card" data-reveal>
+        <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 18V6l8-3v15"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="14.5" cy="15" r="2.5"/></svg></div>
+        <h3>Áudio profissional</h3>
+        <p>Microfones e alto-falantes que captam cada palavra com clareza.</p>
+      </div>
+      <div class="solution-card" data-reveal>
+        <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M9 21h6M12 17v4"/></svg></div>
+        <h3>TVs corporativas</h3>
+        <p>Telas para apresentações, dashboards e reuniões.</p>
+      </div>
+      <div class="solution-card" data-reveal>
+        <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="7" width="14" height="12" rx="3"/><path d="M17 10l4-2v10l-4-2"/><path d="M8 3l1 2 2 1-2 1-1 2-1-2-2-1 2-1z"/></svg></div>
+        <h3>Câmeras inteligentes</h3>
+        <p>Enquadramento automático por IA.</p>
+      </div>
+      <div class="solution-card" data-reveal>
+        <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 00.34 1.87l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.7 1.7 0 00-1.87-.34 1.7 1.7 0 00-1 1.55V21a2 2 0 01-4 0v-.09A1.7 1.7 0 009 19.36a1.7 1.7 0 00-1.87.34l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.7 1.7 0 004.64 15a1.7 1.7 0 00-1.55-1H3a2 2 0 010-4h.09A1.7 1.7 0 004.64 9a1.7 1.7 0 00-.34-1.87l-.06-.06a2 2 0 112.83-2.83l.06.06A1.7 1.7 0 009 4.64a1.7 1.7 0 001-1.55V3a2 2 0 014 0v.09a1.7 1.7 0 001 1.55 1.7 1.7 0 001.87-.34l.06-.06a2 2 0 112.83 2.83l-.06.06A1.7 1.7 0 0019.36 9a1.7 1.7 0 001.55 1H21a2 2 0 010 4h-.09a1.7 1.7 0 00-1.55 1z"/></svg></div>
+        <h3>Automação de salas</h3>
+        <p>Controle de sala com um toque, sem cabos ou comandos complicados.</p>
+      </div>
+      <div class="solution-card" data-reveal>
+        <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 12a8 8 0 0116 0"/><path d="M4 12v5a2 2 0 002 2h1v-7H4zM20 12v5a2 2 0 01-2 2h-1v-7h3z"/></svg></div>
+        <h3>Suporte técnico</h3>
+        <p>Manutenção e suporte contínuo para sua sala nunca parar.</p>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <!-- WhatsApp flutuante -->
-  <a href="https://wa.me/5511999999999" target="_blank" class="wa-float" aria-label="WhatsApp">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
 
-  <!-- Voltar ao topo -->
+<!-- ========================= MARCAS ========================= -->
+<section class="section--tight">
+  <div class="container">
+    <div class="section-head center" data-reveal>
+      <h2>Tecnologia dos maiores fabricantes</h2>
+    </div>
+
+    <div class="brands-row" data-reveal>
+      <div class="brand-logo"><span>Poly</span></div>
+      <div class="brand-logo"><span>Logitech</span></div>
+      <div class="brand-logo"><span>Yealink</span></div>
+      <div class="brand-logo"><span>Jabra</span></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================= CONTATO ========================= -->
+<section class="section" id="contato">
+  <div class="container">
+    <div class="contact-section" data-reveal>
+      <div class="contact-info">
+        <h2>Vamos equipar sua próxima sala?</h2>
+        <p>Fale com nossa equipe e receba uma proposta personalizada para o seu ambiente.</p>
+
+        <div class="contact-channels">
+          <div class="contact-channel">
+            <div class="contact-channel-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div><strong>WhatsApp</strong><a href="https://wa.me/5511999999999" target="_blank">(11) 99999-9999</a></div>
+          </div>
+          <div class="contact-channel">
+            <div class="contact-channel-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div><strong>Telefone</strong><a href="tel:+551140028922">(11) 4002-8922</a></div>
+          </div>
+          <div class="contact-channel">
+            <div class="contact-channel-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div><strong>E-mail</strong><a href="mailto:contato@vcservicos.com.br">contato@vcservicos.com.br</a></div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contact-form">
+        <div class="form-row">
+          <label for="cf-name">Nome</label>
+          <input type="text" id="cf-name" name="nome" placeholder="Seu nome" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-email">E-mail</label>
+          <input type="email" id="cf-email" name="email" placeholder="voce@empresa.com">
+        </div>
+        <div class="form-row">
+          <label for="cf-message">Mensagem</label>
+          <textarea id="cf-message" name="mensagem" placeholder="Conte um pouco sobre a sua sala e o que você precisa"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Enviar pelo WhatsApp</button>
+        <p class="form-note">Ao enviar, abriremos uma conversa no WhatsApp com sua mensagem já preenchida.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= FOOTER ========================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="brand" style="color:white">
+          <span class="brand-mark">VC</span>
+          VC Serviços
+        </a>
+        <p>Projetos audiovisuais e videoconferência para empresas. Do projeto à instalação, com suporte contínuo.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navegação</h5>
+        <a href="produtos.html">Produtos</a>
+        <a href="#solucoes-salas">Soluções</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="footer-col">
+        <h5>Salas</h5>
+        <a href="produtos.html?tipo=pequena">Sala Pequena</a>
+        <a href="produtos.html?tipo=media">Sala Média</a>
+        <a href="produtos.html?tipo=treinamento">Sala de Treinamento</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contato</h5>
+        <a href="https://wa.me/5511999999999" target="_blank">(11) 99999-9999</a>
+        <a href="mailto:contato@vcservicos.com.br">contato@vcservicos.com.br</a>
+        <p>São Paulo, SP</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year">2026</span> VC Serviços. Todos os direitos reservados.</p>
+      <div class="footer-social">
+        <a href="https://wa.me/5511999999999" target="_blank" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+        <a href="mailto:contato@vcservicos.com.br" aria-label="E-mail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="float-stack">
   <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
   </button>
+  <a href="https://wa.me/5511999999999" target="_blank" class="wa-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
 
-  <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

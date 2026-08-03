@@ -1,99 +1,92 @@
-// Nav scroll effect
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 20);
-});
+// ============================================================================
+// VC SERVIÇOS — comportamento compartilhado do site
+// ============================================================================
+(function () {
+  "use strict";
 
-// Mobile menu
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobile-menu');
+  /* ---- Header: estado ao rolar ---- */
+  var header = document.getElementById("site-header");
+  if (header) {
+    var onScroll = function () {
+      if (window.scrollY > 24) header.classList.add("is-scrolled");
+      else header.classList.remove("is-scrolled");
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
 
-hamburger.addEventListener('click', () => {
-  mobileMenu.classList.toggle('open');
-});
-
-mobileMenu.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => mobileMenu.classList.remove('open'));
-});
-
-// Product filter
-const filterBtns = document.querySelectorAll('.filter-btn');
-const produtoCards = document.querySelectorAll('.produto-card');
-
-filterBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    filterBtns.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-
-    const filter = btn.dataset.filter;
-
-    produtoCards.forEach(card => {
-      if (filter === 'todos' || card.dataset.cat === filter) {
-        card.classList.remove('hidden');
-        card.style.animation = 'none';
-        requestAnimationFrame(() => {
-          card.style.animation = 'fadeIn 0.35s ease forwards';
-        });
-      } else {
-        card.classList.add('hidden');
-      }
+  /* ---- Menu mobile ---- */
+  var navToggle = document.getElementById("nav-toggle");
+  var mobileNav = document.getElementById("mobile-nav");
+  if (navToggle && mobileNav) {
+    navToggle.addEventListener("click", function () {
+      var open = mobileNav.classList.toggle("open");
+      navToggle.setAttribute("aria-expanded", String(open));
+      document.body.style.overflow = open ? "hidden" : "";
     });
-  });
-});
+    mobileNav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        mobileNav.classList.remove("open");
+        navToggle.setAttribute("aria-expanded", "false");
+        document.body.style.overflow = "";
+      });
+    });
+  }
 
-// Fade up animation on scroll
-const fadeEls = document.querySelectorAll('.fade-up');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
-    if (entry.isIntersecting) {
-      setTimeout(() => {
-        entry.target.classList.add('visible');
-      }, entry.target.dataset.delay || 0);
-      observer.unobserve(entry.target);
+  /* ---- Reveal on scroll ---- */
+  var revealEls = document.querySelectorAll("[data-reveal]");
+  if (revealEls.length) {
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry, i) {
+            if (entry.isIntersecting) {
+              setTimeout(function () {
+                entry.target.classList.add("is-visible");
+              }, (i % 4) * 70);
+              io.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+      revealEls.forEach(function (el) { io.observe(el); });
+    } else {
+      // Sem suporte a IntersectionObserver: mostra tudo direto
+      revealEls.forEach(function (el) { el.classList.add("is-visible"); });
     }
-  });
-}, { threshold: 0.1 });
+  }
 
-fadeEls.forEach(el => observer.observe(el));
+  /* ---- Voltar ao topo ---- */
+  var backToTop = document.getElementById("back-to-top");
+  if (backToTop) {
+    window.addEventListener("scroll", function () {
+      backToTop.classList.toggle("visible", window.scrollY > 600);
+    }, { passive: true });
+    backToTop.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
 
-// Add fade-up to section elements
-document.querySelectorAll('.marca-card, .produto-card, .contato-card, .sobre-card').forEach((el, i) => {
-  el.classList.add('fade-up');
-  el.dataset.delay = (i % 4) * 80;
-  observer.observe(el);
-});
-
-// Smooth anchor scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', (e) => {
-    const target = document.querySelector(anchor.getAttribute('href'));
-    if (target) {
+  /* ---- Formulário de contato -> abre o WhatsApp com a mensagem pronta ---- */
+  var contactForm = document.getElementById("contact-form");
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  });
-});
+      var name = (contactForm.querySelector("#cf-name") || {}).value || "";
+      var email = (contactForm.querySelector("#cf-email") || {}).value || "";
+      var message = (contactForm.querySelector("#cf-message") || {}).value || "";
 
-// fadeIn keyframes
-const style = document.createElement('style');
-style.textContent = '@keyframes fadeIn { from { opacity:0; transform: translateY(12px); } to { opacity:1; transform: translateY(0); } }';
-document.head.appendChild(style);
+      var text = "Olá! Meu nome é " + name + ".";
+      if (email) text += " Meu e-mail é " + email + ".";
+      if (message) text += " " + message;
 
-// Botão "voltar ao topo" (presente em páginas mais longas)
-const backToTop = document.getElementById('back-to-top');
-if (backToTop) {
-  window.addEventListener('scroll', () => {
-    backToTop.classList.toggle('visible', window.scrollY > 500);
-  });
-  backToTop.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-}
+      var url = "https://wa.me/5511999999999?text=" + encodeURIComponent(text);
+      window.open(url, "_blank", "noopener");
+    });
+  }
 
-// Links "Por porte" (ex: rodapé da home) guardam o filtro de segmento
-// desejado para ser aplicado assim que o catálogo carregar
-document.querySelectorAll('[data-segment-footer]').forEach(el => {
-  el.addEventListener('click', () => {
-    sessionStorage.setItem('pendingSegmentFilter', el.dataset.segmentFooter);
-  });
-});
+  /* ---- Ano corrente no rodapé ---- */
+  var yearEl = document.getElementById("current-year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+})();
