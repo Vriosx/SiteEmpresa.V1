@@ -13,7 +13,7 @@
 
   function waLink(name) {
     var msg = "Olá! Tenho interesse no headset: " + name + ".";
-    return "https://wa.me/5511999999999?text=" + encodeURIComponent(msg);
+    return "https://wa.me/5511917630459?text=" + encodeURIComponent(msg);
   }
 
   function headsetCard(h) {

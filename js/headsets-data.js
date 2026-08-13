@@ -1,11 +1,19 @@
 window.HEADSETS = [
   {
-    id: "poly-blackwire-8225",
-    name: "Poly Blackwire 8225",
+    id: "poly-mission-600",
+    name: "Poly Mission 600",
     brand: "HP Poly",
     perfil: "call-center",
-    desc: "Headset com fio e ANC avançado, feito para operações intensas de contact center.",
-    image: "https://images.pexels.com/photos/8204385/pexels-photo-8204385.jpeg?auto=compress&cs=tinysrgb&w=800"
+    desc: "Novo headset com fio USB da linha Mission, com Clear Voice by Design e cancelamento de ruído por IA em dois microfones.",
+    image: "images/headsets/poly-mission-600.jpg"
+  },
+  {
+    id: "poly-mission-400",
+    name: "Poly Mission 400",
+    brand: "HP Poly",
+    perfil: "call-center",
+    desc: "Headset de entrada da nova linha Mission, com áudio nítido e microfone com cancelamento de ruído.",
+    image: "images/headsets/poly-mission-400.jpg"
   },
   {
     id: "jabra-engage-55",
@@ -13,7 +21,7 @@ window.HEADSETS = [
     brand: "Jabra",
     perfil: "call-center",
     desc: "Áudio de nível corporativo e alto alcance sem fio para call centers de alto volume.",
-    image: "https://images.pexels.com/photos/7682340/pexels-photo-7682340.jpeg?auto=compress&cs=tinysrgb&w=800"
+    image: "images/headsets/jabra-engage-55.jpg"
   },
   {
     id: "yealink-uh38",
@@ -21,7 +29,7 @@ window.HEADSETS = [
     brand: "Yealink",
     perfil: "call-center",
     desc: "Headset com fio de ótimo custo-benefício para uso diário em centrais de atendimento.",
-    image: "https://images.pexels.com/photos/8867411/pexels-photo-8867411.jpeg?auto=compress&cs=tinysrgb&w=800"
+    image: "images/headsets/yealink-uh38.jpg"
   },
   {
     id: "jabra-evolve2-65",
@@ -29,7 +37,7 @@ window.HEADSETS = [
     brand: "Jabra",
     perfil: "hibrido",
     desc: "Headset sem fio compacto com Bluetooth multiponto para o trabalho híbrido.",
-    image: "https://images.pexels.com/photos/7245797/pexels-photo-7245797.jpeg?auto=compress&cs=tinysrgb&w=800"
+    image: "images/headsets/jabra-evolve2-65.jpg"
   },
   {
     id: "poly-voyager-4320",
@@ -37,7 +45,7 @@ window.HEADSETS = [
     brand: "HP Poly",
     perfil: "hibrido",
     desc: "Headset Bluetooth com base de carregamento, pronto para o dia inteiro fora da mesa.",
-    image: "https://images.pexels.com/photos/4672949/pexels-photo-4672949.jpeg?auto=compress&cs=tinysrgb&w=800"
+    image: "images/headsets/poly-voyager-4320.jpg"
   },
   {
     id: "logitech-zone-vibe",
@@ -45,15 +53,7 @@ window.HEADSETS = [
     brand: "Logitech",
     perfil: "hibrido",
     desc: "Leve e confortável, com boa autonomia para quem alterna entre escritório e casa.",
-    image: "https://images.pexels.com/photos/610945/pexels-photo-610945.jpeg?auto=compress&cs=tinysrgb&w=800"
-  },
-  {
-    id: "poly-voyager-focus-2",
-    name: "Poly Voyager Focus 2",
-    brand: "HP Poly",
-    perfil: "executivo",
-    desc: "Cancelamento ativo de ruído premium para reuniões estratégicas sem distrações.",
-    image: "https://images.pexels.com/photos/1181395/pexels-photo-1181395.jpeg?auto=compress&cs=tinysrgb&w=800"
+    image: "images/headsets/logitech-zone-vibe.jpg"
   },
   {
     id: "jabra-evolve2-85",
@@ -61,7 +61,7 @@ window.HEADSETS = [
     brand: "Jabra",
     perfil: "executivo",
     desc: "O headset mais avançado da linha Evolve2, com ANC inteligente e design premium.",
-    image: "https://images.pexels.com/photos/28683720/pexels-photo-28683720.jpeg?auto=compress&cs=tinysrgb&w=800"
+    image: "images/headsets/jabra-evolve2-85.jpg"
   },
   {
     id: "logitech-zone-wireless-2",
@@ -69,6 +69,6 @@ window.HEADSETS = [
     brand: "Logitech",
     perfil: "executivo",
     desc: "Cancelamento de ruído híbrido de última geração para quem lidera reuniões o dia todo.",
-    image: "https://images.pexels.com/photos/1181304/pexels-photo-1181304.jpeg?auto=compress&cs=tinysrgb&w=800"
+    image: "images/headsets/logitech-zone-wireless-2.jpg"
   }
 ];

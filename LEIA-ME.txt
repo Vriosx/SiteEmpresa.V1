@@ -1,0 +1,5 @@
+Adicione aqui o arquivo do logo com o nome exato: logo.png
+(fundo transparente, altura recomendada 64px ou mais)
+
+Enquanto o arquivo não existir, o site mostra automaticamente
+o símbolo "VC" no lugar do logo — nada quebra.

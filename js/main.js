@@ -81,7 +81,7 @@
       if (email) text += " Meu e-mail é " + email + ".";
       if (message) text += " " + message;
 
-      var url = "https://wa.me/5511999999999?text=" + encodeURIComponent(text);
+      var url = "https://wa.me/5511917630459?text=" + encodeURIComponent(text);
       window.open(url, "_blank", "noopener");
     });
   }
