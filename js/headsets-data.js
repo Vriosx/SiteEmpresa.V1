@@ -32,6 +32,38 @@ window.HEADSETS = [
     image: "images/headsets/yealink-uh38.jpg"
   },
   {
+    id: "poly-blackwire-3210",
+    name: "Poly Blackwire 3210",
+    brand: "Poly",
+    perfil: "call-center",
+    desc: "Headset USB monoaural com microfone com cancelamento de ruído, ideal para atendimento, telefonia corporativa e uso diário em computadores.",
+    image: "images/headsets/poly-blackwire-3210.jpg"
+  },
+  {
+    id: "poly-blackwire-3220",
+    name: "Poly Blackwire 3220",
+    brand: "Poly",
+    perfil: "call-center",
+    desc: "Headset USB estéreo para uso profissional, com áudio de qualidade, microfone com cancelamento de ruído e controles integrados para chamadas.",
+    image: "images/headsets/poly-blackwire-3220.jpg"
+  },
+  {
+    id: "poly-da85",
+    name: "Poly DA85",
+    brand: "Poly",
+    perfil: "call-center",
+    desc: "Adaptador de áudio USB para conectar headsets Poly com Quick Disconnect ao computador, ideal para centrais de atendimento e telefonia corporativa.",
+    image: "images/headsets/poly-da85.jpg"
+  },
+  {
+    id: "poly-encorepro-hw510v",
+    name: "Poly EncorePro HW510V",
+    brand: "Poly",
+    perfil: "call-center",
+    desc: "Headset monoaural profissional com Quick Disconnect e tubo de voz removível, desenvolvido para uso prolongado em call centers e ambientes corporativos.",
+    image: "images/headsets/poly-encorepro-hw510v.jpg"
+  },
+  {
     id: "jabra-evolve2-65",
     name: "Jabra Evolve2 65",
     brand: "Jabra",
