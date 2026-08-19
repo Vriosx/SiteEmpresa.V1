@@ -1,5 +1,5 @@
 
-// Fonte única de dados dos equipamentos — usada por produtos.html
+// Fonte única de dados dos equipamentos — usada por videoconferencia.html
 // Imagens armazenadas localmente em:
 // images/produtos/
 

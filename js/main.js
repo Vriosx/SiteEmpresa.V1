@@ -82,7 +82,7 @@
       if (message) text += " " + message;
 
       var url = "https://wa.me/5511917630459?text=" + encodeURIComponent(text);
-      window.open(url, "_blank", "noopener");
+      window.open(url, "_blank", "noopener,noreferrer");
     });
   }
 

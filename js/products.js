@@ -30,7 +30,7 @@
       .map(function (t) { return '<span class="tag">' + roomLabel(t) + "</span>"; })
       .join("");
     return (
-      '<article class="card product-card" data-rooms="' + p.roomTypes.join(",") + '">' +
+      '<article class="card project-card" data-rooms="' + p.roomTypes.join(",") + '">' +
       '<div class="media">' +
       '<div class="project-card-tags">' + roomTags + "</div>" +
       "<!-- Adicione aqui a imagem real do equipamento: " + p.image + " -->" +
@@ -42,7 +42,7 @@
       '<div class="location">' + p.category + " · " + p.brand + "</div>" +
       "<h3>" + p.name + "</h3>" +
       "<p>" + p.desc + "</p>" +
-      '<a href="' + waLink(p.name) + '" target="_blank" class="link-arrow">Solicitar orçamento ' +
+      '<a href="' + waLink(p.name) + '" target="_blank" rel="noopener noreferrer" class="link-arrow">Solicitar orçamento ' +
       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>' +
       "</div></article>"
     );
@@ -50,14 +50,14 @@
 
   grid.innerHTML = PRODUCTS.map(productCard).join("");
 
-  var cards = grid.querySelectorAll(".product-card");
+  var cards = grid.querySelectorAll(".project-card");
   var emptyState = document.getElementById("products-empty");
   var filterBtns = document.querySelectorAll(".filter-pill");
 
   function applyFilter(filter) {
     var visible = 0;
     cards.forEach(function (card) {
-      var rooms = card.dataset.rooms.split(",");
+      var rooms = (card.dataset.rooms || "").split(",");
       var show = filter === "todos" || rooms.indexOf(filter) !== -1;
       card.classList.toggle("is-hidden", !show);
       if (show) visible++;
@@ -69,7 +69,7 @@
     btn.addEventListener("click", function () {
       filterBtns.forEach(function (b) { b.classList.remove("active"); });
       btn.classList.add("active");
-      applyFilter(btn.dataset.filter);
+      applyFilter(btn.dataset.filter || "todos");
     });
   });
 
@@ -95,8 +95,16 @@
 
   var params = new URLSearchParams(window.location.search);
   var initialType = params.get("tipo");
+  var initialBtn = null;
   if (initialType) {
-    var target = document.querySelector('.filter-pill[data-filter="' + initialType + '"]');
-    if (target) target.click();
+    initialBtn = document.querySelector('.filter-pill[data-filter="' + initialType + '"]');
+  }
+
+  if (initialBtn) {
+    filterBtns.forEach(function (b) { b.classList.remove("active"); });
+    initialBtn.classList.add("active");
+    applyFilter(initialType);
+  } else {
+    applyFilter("todos");
   }
 })();

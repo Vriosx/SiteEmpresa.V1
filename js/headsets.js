@@ -27,7 +27,7 @@
       '<div class="location">' + h.brand + "</div>" +
       "<h3>" + h.name + "</h3>" +
       "<p>" + h.desc + "</p>" +
-      '<a href="' + waLink(h.name) + '" target="_blank" class="link-arrow">Solicitar orçamento ' +
+      '<a href="' + waLink(h.name) + '" target="_blank" rel="noopener noreferrer" class="link-arrow">Solicitar orçamento ' +
       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>' +
       "</div></article>"
     );
@@ -53,10 +53,12 @@
     btn.addEventListener("click", function () {
       filterBtns.forEach(function (b) { b.classList.remove("active"); });
       btn.classList.add("active");
-      applyFilter(btn.dataset.filter);
+      applyFilter(btn.dataset.filter || "todos");
       document.getElementById("headsets-grid").scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
+
+  applyFilter("todos");
 
   if ("IntersectionObserver" in window) {
     var io = new IntersectionObserver(
