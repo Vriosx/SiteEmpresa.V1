@@ -3,3 +3,10 @@ Adicione aqui o arquivo do logo com o nome exato: logo.png
 
 Enquanto o arquivo não existir, o site mostra automaticamente
 o símbolo "VC" no lugar do logo — nada quebra.
+
+--- Carrossel de marcas (tela inicial) ---
+Adicione os logos em images/marcas/ com estes nomes:
+  poly.png, logitech.png, yealink.png, jabra.png
+(fundo transparente, altura de ~80px ou mais).
+Sem o arquivo, o carrossel mostra o nome da marca em texto.
+Para incluir outra marca: copie um bloco <div class="logo-item"> em index.html.
