@@ -113,7 +113,7 @@
     var start = function () {
       if (reduceMotion || slides.length < 2) return;
       stop();
-      timer = setInterval(function () { show(current + 1); }, 2800);
+      timer = setInterval(function () { show(current + 1); }, 1500);
     };
 
     if (dotsWrap) {
