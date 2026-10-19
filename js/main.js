@@ -86,59 +86,6 @@
     });
   }
 
-  /* ---- Carrossel de logos: um por vez ---- */
-  var slider = document.querySelector("[data-logo-slider]");
-  if (slider) {
-    var slides = Array.prototype.slice.call(slider.querySelectorAll(".logo-item"));
-    var dotsWrap = slider.querySelector("[data-logo-dots]");
-    var current = 0;
-    var timer = null;
-    var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    var dots = [];
-
-    var show = function (index) {
-      current = (index + slides.length) % slides.length;
-      slides.forEach(function (slide, i) {
-        var active = i === current;
-        slide.classList.toggle("is-active", active);
-        slide.setAttribute("aria-hidden", active ? "false" : "true");
-      });
-      dots.forEach(function (dot, i) {
-        dot.classList.toggle("is-active", i === current);
-        dot.setAttribute("aria-current", i === current ? "true" : "false");
-      });
-    };
-
-    var stop = function () { if (timer) { clearInterval(timer); timer = null; } };
-    var start = function () {
-      if (reduceMotion || slides.length < 2) return;
-      stop();
-      timer = setInterval(function () { show(current + 1); }, 1500);
-    };
-
-    if (dotsWrap) {
-      slides.forEach(function (slide, i) {
-        var label = (slide.querySelector("img") || {}).alt || "marca " + (i + 1);
-        var dot = document.createElement("button");
-        dot.type = "button";
-        dot.className = "logo-dot";
-        dot.setAttribute("aria-label", "Mostrar " + label);
-        dot.addEventListener("click", function () { show(i); start(); });
-        dotsWrap.appendChild(dot);
-        dots.push(dot);
-      });
-    }
-
-    slider.addEventListener("mouseenter", stop);
-    slider.addEventListener("mouseleave", start);
-    document.addEventListener("visibilitychange", function () {
-      if (document.hidden) stop(); else start();
-    });
-
-    show(0);
-    start();
-  }
-
   /* ---- Ano corrente no rodapé ---- */
   var yearEl = document.getElementById("current-year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
